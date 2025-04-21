@@ -44,7 +44,7 @@ aliri_braid = "0.4.0"
 url = "2.5.4"
 base64 = "0.22.0"
 rand = "0.8.5"
-twitch_types = { version = "0.4.3", features = ["serde"] }
+twitch_types = { version = "0.4.8", git = "https://github.com/t348575/twitch_types", branch = "utoipa"}
 
 [dev-dependencies]
 tokio = { version = "1.40.0", features = [
