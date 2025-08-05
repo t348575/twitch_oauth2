@@ -2490,6 +2490,7 @@ dependencies = [
 [[package]]
 name = "twitch_types"
 version = "0.4.8"
+source = "git+https://github.com/t348575/twitch_types?rev=631122a#631122a3a48667a3199fa9a8d6b1fab7f3722886"
 dependencies = [
  "serde",
  "serde_derive",
