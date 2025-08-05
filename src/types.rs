@@ -76,7 +76,7 @@ impl CsrfToken {
     /// Make a new random CSRF token with given amount of bytes
     pub fn new_random_len(len: u32) -> CsrfToken {
         use rand::Rng as _;
-        let random_bytes: Vec<u8> = (0..len).map(|_| rand::thread_rng().gen::<u8>()).collect();
+        let random_bytes: Vec<u8> = (0..len).map(|_| rand::rng().random::<u8>()).collect();
         CsrfToken::new(base64::engine::general_purpose::STANDARD.encode(random_bytes))
     }
 }
